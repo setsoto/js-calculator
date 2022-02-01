@@ -61,3 +61,19 @@ button.number.double-btn::before{
     left:5%;
     top:10%;
 }
+
+#outer-container{
+
+}
+
+@media only screen and (max-width: 700px){
+    #outer-container{
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 1080px){
+    #outer-container{
+        max-width:300px;
+    }
+}
