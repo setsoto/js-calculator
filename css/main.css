@@ -1,0 +1,62 @@
+button.number {
+  width: 100%;
+  padding: 0;
+  border-radius: 25px;
+  margin-right: -2px !important;
+  margin-left: -2px !important;
+  font-size: 170%;
+  border: none;
+  background: #f8f8f8;
+  -webkit-box-shadow: 0 0 0 0.0625em #cbcbcb;
+          box-shadow: 0 0 0 0.0625em #cbcbcb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#f4f4f4)) content-box, radial-gradient(#ededed, rgba(222, 222, 222, 0)) 50% 100%/80% 0.125em no-repeat border-box, -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#c9c9c9)) border-box;
+  background: linear-gradient(#ddd, #f4f4f4) content-box, radial-gradient(#ededed, rgba(222, 222, 222, 0)) 50% 100%/80% 0.125em no-repeat border-box, linear-gradient(#f4f4f4, #c9c9c9) border-box;
+  border: solid 0.125em transparent;
+}
+
+button.number.symbol {
+  font-size: 220%;
+  font-weight: normal;
+}
+
+button.number.top-rw {
+  background: #aaa !important;
+  -webkit-box-shadow: 0 0 0 0.0625em #ddd;
+          box-shadow: 0 0 0 0.0625em #ddd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd)) content-box, radial-gradient(#ddd, rgba(222, 222, 222, 0)) 50% 100%/80% 0.125em no-repeat border-box, -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#ddd)) border-box !important;
+  background: linear-gradient(#eee, #ddd) content-box, radial-gradient(#ddd, rgba(222, 222, 222, 0)) 50% 100%/80% 0.125em no-repeat border-box, linear-gradient(#f8f8f8, #ddd) border-box !important;
+  border: solid 0.125em transparent;
+}
+
+button.number.side-cl {
+  background: #fc6;
+  font-size: 250%;
+  -webkit-box-shadow: 0 0 0 0.0625em #fc6;
+          box-shadow: 0 0 0 0.0625em #fc6;
+  background: -webkit-gradient(linear, left top, left bottom, from(orange), to(#fc6)) content-box, radial-gradient(#fc6, rgba(222, 222, 222, 0)) 50% 100%/80% 0.125em no-repeat border-box, -webkit-gradient(linear, left top, left bottom, from(#fc6), to(orange)) border-box;
+  background: linear-gradient(orange, #fc6) content-box, radial-gradient(#fc6, rgba(222, 222, 222, 0)) 50% 100%/80% 0.125em no-repeat border-box, linear-gradient(#fc6, orange) border-box;
+  border: solid 0.135em transparent;
+  color: #232323;
+}
+
+.btn-outer {
+  padding: 5px;
+}
+
+button.number::before {
+  content: "";
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  left: 10%;
+  top: 13%;
+  border-radius: 30px;
+}
+
+button.number.double-btn::before {
+  content: "";
+  width: 87%;
+  left: 5%;
+  top: 10%;
+}
+/*# sourceMappingURL=main.css.map */
