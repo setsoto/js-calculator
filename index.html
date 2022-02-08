@@ -17,123 +17,137 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="padded">
-            <div class="row" style="">
-                <div class="two twelfths mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="background:#eee;padding:1em;border-radius:50% 50% 0 50%;border:1px solid #ddd">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    
+        <div class="row centered" id="outer-container">
+            <div class="twelve twelfths padded" style="height:100vh">
+                <div class="row hidden">
+                    <div class="two twelfths mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="background:#eee;padding:1em;border-radius:50% 50% 0 50%;border:1px solid #ddd">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        
+                    </div>
                 </div>
-            </div>
-            <div style="min-height:8em;" class="row">   
+                <div style="min-height:12em;" class="row">   
+                    <div class="computing-display calc-output">0</div>
+                    <div class="result-display calc-output">
+
+                    </div>
+                </div>
                 
-            </div>
-            <div class="row" style="margin-bottom:0;position:absolute;bottom:0;width:95%;right:2.5%;left:2.5%;margin-bottom:8px">
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number top-rw symbol">
-                        C
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number top-rw symbol">
-                        +/-
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number top-rw symbol">
-                        %
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number symbol side-cl">
-                        &#247;
-                    </button>
-                </div>
+                <div class="row" style="margin-bottom:0;position:absolute;bottom:0;width:95%;right:2.5%;left:2.5%;margin-bottom:8px;">
+                    <div class="row padded">
+                        <span style="float:right;margin-right:0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width:2.5em;color:#808080" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number top-rw symbol">
+                            C
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number top-rw symbol">
+                            +/-
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number top-rw symbol">
+                            %
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number symbol side-cl">
+                            &#247;
+                        </button>
+                    </div>
 
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="7">
-                        7
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="8">
-                        8
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="9">
-                        9
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number side-cl symbol" value="mul">
-                        &#215;
-                    </button>
-                </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="7">
+                            7
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="8">
+                            8
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="9">
+                            9
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number side-cl symbol operator" value="mul">
+                            &#215;
+                        </button>
+                    </div>
 
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="4">
-                        4
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="5">
-                        5
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="6">
-                        6
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number side-cl symbol" value="min">
-                        -
-                    </button>
-                </div>
-
-
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="1">
-                        1
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="2">
-                        2
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number" value="3">
-                        3
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number side-cl symbol">
-                        +
-                    </button>
-                </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="4">
+                            4
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="5">
+                            5
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="6">
+                            6
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number side-cl symbol operator" value="min">
+                            -
+                        </button>
+                    </div>
 
 
-                <div class="six twelfths mobile btn-outer">
-                    <button class="number double-btn">
-                        0
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number">
-                        .
-                    </button>
-                </div>
-                <div class="three twelfths mobile btn-outer">
-                    <button class="number side-cl symbol ">
-                        =
-                    </button>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="1">
+                            1
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="2">
+                            2
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number" value="3">
+                            3
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number side-cl symbol operator" value="plus">
+                            +
+                        </button>
+                    </div>
+
+
+                    <div class="six twelfths mobile btn-outer">
+                        <button class="number double-btn">
+                            0
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number">
+                            .
+                        </button>
+                    </div>
+                    <div class="three twelfths mobile btn-outer">
+                        <button class="number side-cl symbol operator" value="eval">
+                            =
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+        <input type="input" value="" id="operand" />
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/basica.js"></script>
     </body>
