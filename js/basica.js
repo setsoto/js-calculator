@@ -34,7 +34,13 @@ function appendDisplay(intt){
 
 
     if ($("#operand").val()!=="" && $("#operator").val()!==""){
-        $("#operand-2").val(intt)
+        if ($("#operand-2")!==""){
+            var before = $("#operand-2").val()
+            $("#operand-2").val(before+intt)
+        }else{
+            $("#operand-2").val(intt)
+        }
+        
     }
     else{
         $("#operand").val($(".computing-display").html())
@@ -61,7 +67,7 @@ function appendOperator(operator){
             case 'min':
                 sign = "-"
                 break
-            case 'plus':
+            case 'sum':
                 sign = "+"
                 break
             case 'div':
@@ -71,23 +77,23 @@ function appendOperator(operator){
         
         if (operator==="eval"){
             var operatr = $("#operator").val()
-            var op1 = $("#operand").val()
-            var op2 = $("#operand-2").val()
+            var op1 = parseInt($("#operand").val())
+            var op2 = parseInt($("#operand-2").val())
 
             var result
 
             switch ($("#operator").val()){
                 case 'mul':
-                    result = +op1*+op2
+                    result = op1*op2
                     break
                 case 'min':
-                    result = +op1-+op2
+                    result = op1-op2
                     break
-                case 'plus':
-                    result = +op1+(+op2)
+                case 'sum':
+                    result = op1+op2
                     break
                 case 'div':
-                    result = +op1/(+op2)
+                    result = op1/op2
                     break
             }
             $(".computing-display").html(result)
@@ -114,4 +120,6 @@ function appendOperator(operator){
     
 }
 
+function calculate(){
 
+}
